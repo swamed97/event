@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="contbx">
+        <h2>register</h2>
+        <form [formGroup]="registerForm">
+        <div class="inpbx">
+            <span>Enter your userid</span>
+            <input type="text" formControlName="userid">
+            <div style="color: red" *ngIf="(this.registerForm.get('userid')?.errors)&&(this.registerForm.get('userid')?.touched)">Not a valid form</div>
+        </div>
+
+        <div class="inpbx">
+            <span>Enter your emailid</span>
+            <input type="text" formControlName="email">
+            <div style="color: red" *ngIf="(this.registerForm.get('email')?.errors)&&(this.registerForm.get('email')?.touched)">Not a valid form</div>
+        </div>
+
+        <div class="inpbx">
+            <span>Enter password</span>
+            <input type="password" formControlName="password">
+            <div style="color: red" *ngIf="(this.registerForm.get('password')?.errors)&&(this.registerForm.get('password')?.touched)">Not a valid form</div>
+        </div>
+
+       
+
+        <div class="inpbx">
+           
+            <input type="submit" value="SignUp" (click)="register()">
+        </div>
+        </form>
+    </div>
+</div>

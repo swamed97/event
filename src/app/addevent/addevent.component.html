@@ -1,0 +1,42 @@
+<h2>Event details</h2>
+<div class="table">
+    <table class="tablefont">
+
+        <thead>
+            <tr>
+                <th>Event Date</th>
+                <th>Event Name</th>
+                <th>priority</th>
+            </tr>
+        </thead>
+
+        <tbody *ngFor="let event of eventsArray">
+           
+            <tr>
+                <td>{{event.event_date}}</td>
+                <td>{{event.event_name}}</td>
+                <td>{{event.priority}}</td>
+                <td class="btnrow">
+
+                    <button class="btn btn-info" (click)="eventdelete(event.event_name,event.event_date)">EventDelete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="card" *ngIf="currentuser">
+    <div class="eventdelete">
+        <span>Delete event</span>
+        <div class="eventdetails">
+            <input type="text" [(ngModel)]="eventname" readonly><br>
+            <input type="text" [(ngModel)]="eventdate" readonly><br>
+            <input type="text" [(ngModel)]="userid" readonly><br>
+            <input type="text" [(ngModel)]="priority" readonly><br>
+
+        </div>
+        <div class="btn">
+            <button (click)="delete()">delete</button>
+            <button (click)="canceldiv()">cancel</button>
+        </div>
+    </div>
+</div>

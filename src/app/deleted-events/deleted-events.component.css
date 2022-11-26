@@ -1,0 +1,70 @@
+.table{
+    padding: 1rem 4rem;
+    overflow-y: scroll;
+    height: calc(100vh - 15vh);
+}
+table{
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+table thead{
+    width: 100%;
+    overflow: hidden;
+}
+table tbody{
+    width: 100%;
+    overflow: hidden;
+}
+thead tr{
+    border-radius: 10px;
+
+}
+tbody tr{
+    border-radius: 10px;
+}
+th{
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 400;
+    color: aliceblue;
+}
+td{
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 400;
+    color: aliceblue;
+
+}
+.card{
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 300px;
+    min-width: 40vh;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+}
+.eventdelete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.eventdetails{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: aliceblue;
+    text-align: center;
+}

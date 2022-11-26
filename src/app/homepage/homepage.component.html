@@ -1,0 +1,44 @@
+  <div class="navbar  bg-dark">
+
+    <div class="bar">
+      <button class="btn btn-danger"  (click)="addEvent()">AddEvent</button>
+    </div>
+    
+    <div class="ev"><a href="./addevent">Events</a><br><a href="./deleted-events">Deleted Events</a></div>
+
+    
+</div>
+
+
+
+<div class="card" *ngIf="currentUser">
+  <div class="fieldset">
+    <h2>Create Event</h2>
+    <div class="some-class">
+      <input type="text" placeholder="Enter userid" [(ngModel)]="userid" readonly>
+      <input type="text" placeholder="Enter event name" [(ngModel)]="ename">
+      <input type="date" placeholder="Enter Event date" [(ngModel)]="edate">
+      <div class="priority">
+        <div class="wrapper-class">
+
+          <input type="radio" name="priority" value="high" [(ngModel)]="priority" checked:true>
+          <label for="high">High</label>
+
+          <input type="radio" name="priority" value="medium" [(ngModel)]="priority" checked:true>
+          <label for="high">medium</label>
+
+          <input type="radio" name="priority" value="low" [(ngModel)]="priority" checked:true>
+          <label for="high">low</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="btnn">
+      <button class="btn btn-danger" (click)="create()">Create</button>
+      <button class="btn btn-dark" (click)="cancel()">Cancel</button>
+    </div>
+
+  </div>
+</div>
+ 
+

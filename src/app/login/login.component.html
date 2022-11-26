@@ -1,0 +1,23 @@
+<div class="main">
+    <div class="contbx">
+        <h2>Login</h2>
+        <div class="inpbx">
+            <span>Enter email</span>
+            <input type="text" [(ngModel)]="email">
+        </div>
+
+        <div class="inpbx">
+            <span>Enter password</span>
+            <input type="password" [(ngModel)]="password">
+        </div>
+
+        <div class="inpbx">
+           <p>New user? <a href="/register">SignUp</a></p>
+        </div>
+
+        <div class="inpbx">
+          
+            <input type="submit" value="Login" (click)="login()">
+        </div>
+    </div>
+</div>

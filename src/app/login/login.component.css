@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.main{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    border: 2px solid #111212;
+    box-shadow: 50px 50px 50px;
+    margin-left: 250px;
+    padding: 30px;
+    border-radius: 10px;
+}
+h2{
+    color:rgb(234, 223, 223);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}  
+.inpbx{
+    margin-bottom: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: aliceblue;
+    background: transparent;
+    border-radius: 10px;
+   
+}
+span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: aliceblue;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+input[type="submit"]{
+    background: #ff4584;
+}
+    
+
